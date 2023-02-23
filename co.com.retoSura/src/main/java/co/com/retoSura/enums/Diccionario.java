@@ -1,10 +1,18 @@
 package co.com.retoSura.enums;
 
-public class Diccionario {
+public enum Diccionario {
 
-    private Diccionario() {}
+    URL_BASE_GUI  ("https://magento.softwaretestingboard.com/"),
+    ACTOR_NAME ("Fabricio"),
+    RUTA_DRIVERS ("src/test/resources/drivers");
 
-    public static final String URL_BASE_GUI = "https://magento.softwaretestingboard.com/";
-    public static final String ACTOR_NAME = "Fabricio";
-    public static final String RUTA_DRIVERS = "src/test/resources/drivers";
+    private final String valor;
+
+    Diccionario(String valor){
+        this.valor=valor;
+    }
+
+    public String getValor() {
+        return valor;
+    }
 }
