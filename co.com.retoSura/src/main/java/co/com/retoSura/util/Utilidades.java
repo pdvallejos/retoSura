@@ -1,11 +1,13 @@
 package co.com.retoSura.util;
 
 import com.github.javafaker.Faker;
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.targets.Target;
 
 import java.util.ArrayList;
 import java.util.Locale;
 
-public class UsuariosAleatoreos {
+public class Utilidades {
 
     public static ArrayList<String> generarClientesAleatorios(){
         ArrayList<String> listaCliente = new ArrayList<>();
@@ -20,5 +22,8 @@ public class UsuariosAleatoreos {
         listaCliente.add(contrasena);
         return listaCliente;
     }
-
+    public static String obtenerTextoElemento(Target target, Actor actor){
+        wait
+        return target.resolveFor(actor).getText();
+    }
 }
