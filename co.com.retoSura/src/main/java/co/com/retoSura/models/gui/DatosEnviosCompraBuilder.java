@@ -5,7 +5,7 @@ import co.com.retoSura.tasks.gui.DiligenciarFormularioDeCompra;
 public  class DatosEnviosCompraBuilder {
 
     //clase tiene una instancia de DatosEnvioCompra
-    DatosEnvioCompra datosEnvioCompra;
+ DatosEnvioCompra datosEnvioCompra;
 
 
     // Propiedades que se utilizan para construir el objeto DatosEnvioCompra

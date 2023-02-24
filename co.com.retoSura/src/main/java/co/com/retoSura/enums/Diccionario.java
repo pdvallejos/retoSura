@@ -1,10 +1,21 @@
 package co.com.retoSura.enums;
 
-public class Diccionario {
+import lombok.AllArgsConstructor;
+import lombok.Getter;
 
-    private Diccionario() {}
+@Getter
+@AllArgsConstructor
+public enum Diccionario {
 
-    public static final String URL_BASE_GUI = "https://magento.softwaretestingboard.com/";
-    public static final String ACTOR_NAME = "Fabricio";
-    public static final String RUTA_DRIVERS = "src/test/resources/drivers";
+
+
+    URL_BASE_GUI  ("https://magento.softwaretestingboard.com/"),
+    ACTOR_NAME ("Fabricio"),
+    RUTA_DRIVERS ("src/test/resources/drivers"),
+    VALIDACION_NO_DILIGENCIA_CAMPOS ("error durante el proceso de diligenciamiento de campos");
+
+
+    private final String valor;
+
+
 }

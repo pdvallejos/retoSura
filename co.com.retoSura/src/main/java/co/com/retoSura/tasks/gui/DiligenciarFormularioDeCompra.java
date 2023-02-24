@@ -2,12 +2,15 @@ package co.com.retoSura.tasks.gui;
 
 
 import java.time.Duration;
+
+import co.com.retoSura.exceptions.gui.ProcesoCompraException;
 import co.com.retoSura.models.gui.DatosEnvioCompra;
 import co.com.retoSura.models.gui.DatosEnviosCompraBuilder;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.*;
 
+import static co.com.retoSura.enums.Diccionario.VALIDACION_NO_DILIGENCIA_CAMPOS;
 import static co.com.retoSura.interaccions.gui.Click.clickOn;
 import static co.com.retoSura.userinterfaces.gui.ProcesoDeCompra.*;
 import static net.thucydides.core.webdriver.SerenityWebdriverManager.inThisTestThread;
@@ -49,43 +52,48 @@ public class DiligenciarFormularioDeCompra implements Task {
         inThisTestThread().getCurrentDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         // Acciones que el actor debe realizar en la página web para llenar el formulario
-        actor.attemptsTo(
-                Scroll.to(TXT_CORREO),
-                Clear.field(TXT_CORREO),
-                Enter.theValue(datosEnvioCompra.getCorreo()).into(TXT_CORREO),
 
-                Scroll.to(TXT_NOMBRE),
-                Clear.field(TXT_NOMBRE),
-                Enter.theValue(datosEnvioCompra.getNombre()).into(TXT_NOMBRE),
+                try{
+                    actor.attemptsTo(
+                    Scroll.to(TXT_CORREO),
+                    Clear.field(TXT_CORREO),
+                    Enter.theValue(datosEnvioCompra.getCorreo()).into(TXT_CORREO),
 
-                Scroll.to(TXT_APELLIDO),
-                Clear.field(TXT_APELLIDO),
-                Enter.theValue(datosEnvioCompra.getApellido()).into(TXT_APELLIDO),
+                    Scroll.to(TXT_NOMBRE),
+                    Clear.field(TXT_NOMBRE),
+                    Enter.theValue(datosEnvioCompra.getNombre()).into(TXT_NOMBRE),
 
-                Scroll.to(TXT_DIRECCION),
-                Clear.field(TXT_DIRECCION),
-                Enter.theValue(datosEnvioCompra.getDireccion()).into(TXT_DIRECCION),
+                    Scroll.to(TXT_APELLIDO),
+                    Clear.field(TXT_APELLIDO),
+                    Enter.theValue(datosEnvioCompra.getApellido()).into(TXT_APELLIDO),
 
-                Scroll.to(TXT_CIUDAD),
-                Clear.field(TXT_CIUDAD),
-                Enter.theValue(datosEnvioCompra.getCiudad()).into(TXT_CIUDAD),
+                    Scroll.to(TXT_DIRECCION),
+                    Clear.field(TXT_DIRECCION),
+                    Enter.theValue(datosEnvioCompra.getDireccion()).into(TXT_DIRECCION),
 
-                Scroll.to(LST_ESTADO),
-                SelectFromOptions.byIndex(datosEnvioCompra.getEstado()).from(LST_ESTADO),
+                    Scroll.to(TXT_CIUDAD),
+                    Clear.field(TXT_CIUDAD),
+                    Enter.theValue(datosEnvioCompra.getCiudad()).into(TXT_CIUDAD),
 
+                    Scroll.to(LST_ESTADO),
+                    SelectFromOptions.byIndex(datosEnvioCompra.getEstado()).from(LST_ESTADO),
 
-                Scroll.to(TXT_CODIGO_POSTAL),
-                Clear.field(TXT_CODIGO_POSTAL),
-                Enter.theValue(datosEnvioCompra.getCodigoPostal()).into(TXT_CODIGO_POSTAL),
+                    Scroll.to(TXT_CODIGO_POSTAL),
+                    Clear.field(TXT_CODIGO_POSTAL),
+                    Enter.theValue(datosEnvioCompra.getCodigoPostal()).into(TXT_CODIGO_POSTAL),
 
-                Scroll.to(TXT_TELEFONO),
-                Clear.field(TXT_TELEFONO),
-                Enter.theValue(datosEnvioCompra.getTelefono()).into(TXT_TELEFONO),
-                Click.on(CHK_PRECIO),
-                Click.on(BTN_SIGUIENTE),
-                clickOn(BTN_REALIZAR_PEDIDO)
+                    Scroll.to(TXT_TELEFONO),
+                    Clear.field(TXT_TELEFONO),
+                    Enter.theValue(datosEnvioCompra.getTelefono()).into(TXT_TELEFONO),
+                    Click.on(CHK_PRECIO),
+                    Click.on(BTN_SIGUIENTE),
+                    clickOn(BTN_REALIZAR_PEDIDO)
 
-        );
+                     );
+        }catch (Exception exception){
+                    throw new ProcesoCompraException(VALIDACION_NO_DILIGENCIA_CAMPOS.getValor(),exception);
+        }
+
     }
 }
 

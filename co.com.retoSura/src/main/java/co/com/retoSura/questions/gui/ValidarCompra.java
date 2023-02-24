@@ -2,7 +2,7 @@ package co.com.retoSura.questions.gui;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
-import net.thucydides.core.requirements.reports.ScenarioOutcome;
+
 
 import static co.com.retoSura.userinterfaces.gui.ValidarCompra.TXT_CONFIRMACION;
 

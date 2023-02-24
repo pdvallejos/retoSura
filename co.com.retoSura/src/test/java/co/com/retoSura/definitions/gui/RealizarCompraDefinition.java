@@ -18,7 +18,6 @@ import org.openqa.selenium.WebDriver;
 
 import static co.com.retoSura.enums.Diccionario.URL_BASE_GUI;
 import static co.com.retoSura.questions.gui.ValidarCompra.validarCompra;
-//import static co.com.retoSura.tasks.gui.AgregarProductosHombre.agregarProductosHombre;
 import static co.com.retoSura.tasks.gui.AgregarProductosMujer.agregarProductosMujer;
 import static co.com.retoSura.tasks.gui.DiligenciarFormularioDeCompra.conCorreo;
 import static co.com.retoSura.userinterfaces.gui.ValidarCompra.TXT_CONFIRMACION;
@@ -37,7 +36,7 @@ public class RealizarCompraDefinition extends Setup {
     public void queElUsuarioIngresaAlSitioWeb() {
             setupGeneral();
             actor.can(BrowseTheWeb.with(webdriver));
-            actor.attemptsTo(Open.url(URL_BASE_GUI));
+            actor.attemptsTo(Open.url(URL_BASE_GUI.getValor()));
     }
 
 

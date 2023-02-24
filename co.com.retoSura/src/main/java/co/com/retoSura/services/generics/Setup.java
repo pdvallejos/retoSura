@@ -14,10 +14,10 @@ import static co.com.retoSura.enums.Log4jValues.LOG4J_PROPERTIES_FILE_PATH;
 
 public class Setup {
     protected WebDriver webdriver;
-    protected Actor actor = Actor.named(ACTOR_NAME);
+    protected Actor actor = Actor.named(ACTOR_NAME.getValor());
     protected void setupGeneral() {
         setupLog4j();
-        WebDriverManager.chromedriver().cachePath(RUTA_DRIVERS).setup();
+        WebDriverManager.chromedriver().cachePath(RUTA_DRIVERS.getValor()).setup();
         webdriver = new ChromeDriver(configurarChrome());
 
     }
