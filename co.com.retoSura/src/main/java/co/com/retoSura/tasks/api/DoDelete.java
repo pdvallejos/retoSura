@@ -3,7 +3,7 @@ package co.com.retoSura.tasks.api;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.rest.interactions.Delete;
-import net.serenitybdd.screenplay.rest.interactions.Post;
+
 
 import java.util.Map;
 
