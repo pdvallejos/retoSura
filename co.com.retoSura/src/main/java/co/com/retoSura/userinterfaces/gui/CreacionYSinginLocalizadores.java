@@ -58,11 +58,7 @@ public class CreacionYSinginLocalizadores {
             .the("Contrasena ingresar")
             .located(cssSelector("fieldset #send2"));
 
-    public static final Target MSJ_REGISTRO = Target
-            .the("mensaje de registro")
-            .located(cssSelector("#maincontent div.page.messages div:nth-child(2)  div  div  div"));
-
     public static final Target TITULO_INGRESO = Target
             .the("Titulo Ingreso")
-            .located(cssSelector("header .logged-in"));
+            .located(cssSelector("body > div.page-wrapper > header > div.panel.wrapper > div > ul > li.greet.welcome > span"));
 }

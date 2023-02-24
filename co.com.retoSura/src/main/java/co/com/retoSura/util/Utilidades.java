@@ -23,7 +23,6 @@ public class Utilidades {
         return listaCliente;
     }
     public static String obtenerTextoElemento(Target target, Actor actor){
-        wait
         return target.resolveFor(actor).getText();
     }
 }
