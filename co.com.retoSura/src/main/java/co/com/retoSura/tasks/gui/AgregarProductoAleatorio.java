@@ -4,22 +4,15 @@ import co.com.retoSura.interaccions.Esperar;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
-import net.serenitybdd.screenplay.actions.MoveMouseToTarget;
 import net.serenitybdd.screenplay.actions.MoveMouseToWebElement;
-import net.serenitybdd.screenplay.waits.WaitUntil;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
 import java.util.List;
 import java.util.Random;
-
 import static co.com.retoSura.userinterfaces.gui.AgregarProductosFiltradosUserInterfaces.LNK_AGREGAR;
 import static co.com.retoSura.userinterfaces.gui.AgregarProductosFiltradosUserInterfaces.LNK_PRODUCTO;
-import static co.com.retoSura.userinterfaces.gui.MenuRelojesUserInterface.LNK_GEAR;
-import static co.com.retoSura.userinterfaces.gui.MenuRelojesUserInterface.LNK_RELOJES;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
-import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
 public class AgregarProductoAleatorio implements Task {
     private final WebDriver driver;
