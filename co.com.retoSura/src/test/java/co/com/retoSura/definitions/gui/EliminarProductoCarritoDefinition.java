@@ -16,7 +16,7 @@ public class EliminarProductoCarritoDefinition extends Setup {
     public void queElUsuarioIngresaAlPortalDeCompras() {
         setupGeneral();
         actor.can(BrowseTheWeb.with(webdriver));
-        actor.attemptsTo(Open.url(URL_BASE_GUI));
+        actor.attemptsTo(Open.url(URL_BASE_GUI.getValor()));
     }
 
     @Cuando("se adiere un producto al carrito")

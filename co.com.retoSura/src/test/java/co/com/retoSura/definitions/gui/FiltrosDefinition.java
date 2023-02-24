@@ -17,7 +17,7 @@ public class FiltrosDefinition extends Setup {
     public void queElUsuarioIngresaAlSitioWeb() {
         setupGeneral();
         actor.can(BrowseTheWeb.with(webdriver));
-        actor.attemptsTo(Open.url(URL_BASE_GUI));
+        actor.attemptsTo(Open.url(URL_BASE_GUI.getValor()));
     }
 
     @Cuando("el usuario aplica los filtros")
