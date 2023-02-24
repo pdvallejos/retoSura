@@ -1,0 +1,6 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ôö¢
+k
+java:S1128"NRemove this unused import 'net.serenitybdd.screenplay.rest.interactions.Post'.(ˆ·õß8Ş¡Û€è0
+G
+java:S1068"+Remove this unused "headers" private field.(ÒÒÁ8 ÏÙ€è0
