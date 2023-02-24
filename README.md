@@ -56,6 +56,9 @@ https://magento.softwaretestingboard.com/
 
 ## Integrantes 🛠️:
 Daniel David Cardona
+
 Cristian Arenas Gomez
+
 Camilo Andres Rodriguez
+
 Pablo Vallejos
