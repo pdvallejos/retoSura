@@ -1,0 +1,7 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Crear un autor","Creación de autor exitoso","SUCCESS","2023-02-23T16:41:37.3881731-05:00[America/Bogota]","0.0","5.37"
+"Crear un autor","Creación de autor no exitoso","SUCCESS","2023-02-23T16:41:42.7774493-05:00[America/Bogota]","0.0","1.19"
+"Editar un autor","Edición de autor exitoso","SUCCESS","2023-02-23T16:41:44.9926221-05:00[America/Bogota]","0.0","1.13"
+"Editar un autor","Edición de autor no exitoso","SUCCESS","2023-02-23T16:41:46.1322413-05:00[America/Bogota]","0.0","1.14"
+"Eliminar un autor","Eliminación de autor exitoso","SUCCESS","2023-02-23T16:41:47.3516495-05:00[America/Bogota]","0.0","1.3"
+"Eliminar un autor","Eliminación de autor no exitoso","SUCCESS","2023-02-23T16:41:48.6627369-05:00[America/Bogota]","0.0","1.07"
