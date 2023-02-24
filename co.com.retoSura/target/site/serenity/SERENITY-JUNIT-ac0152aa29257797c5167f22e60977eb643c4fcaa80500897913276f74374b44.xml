@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Eliminar un autor" skipped="0" tests="2" time="2.26" timestamp="2023-02-24 12:51:20"><testcase name="Eliminación de autor exitoso"/><testcase name="Eliminación de autor no exitoso"/></testsuite>

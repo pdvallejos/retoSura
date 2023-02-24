@@ -22,5 +22,5 @@ public class VerificarCarritoCompras implements Task {
         );
     }
 
-    public static VerificarCarritoCompras verificarCarritoCompras(){return new VerificarCarritoCompras();}
+    public static VerificarCarritoCompras mio(){return new VerificarCarritoCompras();}
 }

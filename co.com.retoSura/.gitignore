@@ -4,7 +4,6 @@
 .scannerwork
 .project
 .settings/
-.gradle/
 buildSrc/.gradle/
 buildSrc/build/
 lib/
