@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Eliminar un usuario","Eliminación de usuario exitoso","SUCCESS","2023-02-24T13:05:12.9951133-05:00[America/Bogota]","0.0","1.18"
+"Eliminar un usuario","Eliminación de usuario no exitoso","SUCCESS","2023-02-24T13:05:14.184292-05:00[America/Bogota]","0.0","1.07"

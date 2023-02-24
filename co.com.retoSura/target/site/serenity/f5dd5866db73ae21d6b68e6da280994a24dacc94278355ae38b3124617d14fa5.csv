@@ -1,0 +1,7 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Crear un libro","Creación de libro exitoso","SUCCESS","2023-02-24T12:58:25.5465408-05:00[America/Bogota]","0.0","5.83"
+"Crear un libro","Creación de libro no exitoso","SUCCESS","2023-02-24T12:58:31.4000637-05:00[America/Bogota]","0.0","1.18"
+"Editar un libro","Edición de libro exitoso","SUCCESS","2023-02-24T12:58:33.7106361-05:00[America/Bogota]","0.0","1.16"
+"Editar un libro","Edición de libro no exitoso","SUCCESS","2023-02-24T12:58:34.8797107-05:00[America/Bogota]","0.0","1.09"
+"Eliminar un libro","Eliminación de libro exitoso","SUCCESS","2023-02-24T12:58:36.074662-05:00[America/Bogota]","0.0","1.15"
+"Eliminar un libro","Eliminación de libro no exitoso","SUCCESS","2023-02-24T12:58:37.2307804-05:00[America/Bogota]","0.0","1.06"

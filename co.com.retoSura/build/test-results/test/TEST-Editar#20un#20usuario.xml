@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Editar un usuario" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-02-24T18:05:10" hostname="DESKTOP-PBMP74A" time="2.298">
+  <properties/>
+  <testcase name="Edición de usuario exitoso" classname="Editar un usuario" time="1.163"/>
+  <testcase name="Edición de usuario no exitoso" classname="Editar un usuario" time="1.135"/>
+  <system-out><![CDATA[Body:
+{
+    "id": 1,
+    "userName": "elcompae",
+    "password": "1234rrr"
+}
+Body:
+{
+    "id": 1,
+    "userName": 1,
+    "password": 2
+}
+]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///D:/sofka/calidad/reto/reto_sura_api/retoSura/retoSura/co.com.retoSura/src/test/resources/features/api/usuario/editarUsuario.feature
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Edición de usuario exitoso(editar-un-usuario;edición-de-usuario-exitoso)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Edición de usuario exitoso
+----------------------------------------------------------------------
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///D:/sofka/calidad/reto/reto_sura_api/retoSura/retoSura/co.com.retoSura/src/test/resources/features/api/usuario/editarUsuario.feature
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Edición de usuario no exitoso(editar-un-usuario;edición-de-usuario-no-exitoso)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Edición de usuario no exitoso
+----------------------------------------------------------------------
+]]></system-err>
+</testsuite>

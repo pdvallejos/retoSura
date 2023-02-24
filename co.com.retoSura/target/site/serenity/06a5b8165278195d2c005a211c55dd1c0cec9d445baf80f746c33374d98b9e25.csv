@@ -1,0 +1,7 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Crear un usuario","Creación de usuario exitoso","SUCCESS","2023-02-24T13:05:02.5361591-05:00[America/Bogota]","0.0","5.8"
+"Crear un usuario","Creación de usuario no exitoso","SUCCESS","2023-02-24T13:05:08.3508727-05:00[America/Bogota]","0.0","1.13"
+"Editar un usuario","Edición de usuario exitoso","SUCCESS","2023-02-24T13:05:10.609964-05:00[America/Bogota]","0.0","1.15"
+"Editar un usuario","Edición de usuario no exitoso","SUCCESS","2023-02-24T13:05:11.7690022-05:00[America/Bogota]","0.0","1.12"
+"Eliminar un usuario","Eliminación de usuario exitoso","SUCCESS","2023-02-24T13:05:12.9951133-05:00[America/Bogota]","0.0","1.18"
+"Eliminar un usuario","Eliminación de usuario no exitoso","SUCCESS","2023-02-24T13:05:14.184292-05:00[America/Bogota]","0.0","1.07"

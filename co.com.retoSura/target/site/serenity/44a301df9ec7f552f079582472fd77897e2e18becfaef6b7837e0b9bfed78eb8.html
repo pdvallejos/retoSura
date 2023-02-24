@@ -150,7 +150,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 23-02-2023 16:41</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 24-02-2023 12:51</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -284,7 +284,7 @@
                     </td>
 
                     <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">004ms</span></td>
+                    <td width="100"><span class="top-level-step">006ms</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
 
@@ -311,7 +311,7 @@
                     </td>
 
                     <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">1s 092ms</span></td>
+                    <td width="100"><span class="top-level-step">1s 048ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -341,7 +341,7 @@
                     </td>
 
                     <td width="130"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">1s 071ms</span></td>
+                    <td width="100"><span class="nested-step">1s 023ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -362,7 +362,7 @@
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1-0-0')"
                                style="display:block;">
                                 <span class="nested-step">
-                                                Pepe executes a POST on the resource /api/v1/Authors
+                                                Pepe executes a POST on the resource /api/v1/Authors/1
                                         </span>
                             </a>
                             <span class="evidence">
@@ -371,7 +371,7 @@
                     </td>
 
                     <td width="130"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">1s 039ms</span></td>
+                    <td width="100"><span class="nested-step">994ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -388,7 +388,7 @@
                     <td class="step-description-column">
                         <div class="step-description">
                                 <span class="nested-group-step">
-                                                POST https://fakerestapi.azurewebsites.net/api/v1/Authors
+                                                POST https://fakerestapi.azurewebsites.net/api/v1/Authors/1
                                         </span>
                             <span class="evidence">
                                         <span class="piece-of-evidence">
@@ -404,17 +404,17 @@
                         <div class="card">
                             <div class="card-body">
                                 <h4>Response</h4>
-                                    <p>URL: https://fakerestapi.azurewebsites.net/api/v1/Authors</p>
-                                    <p>Status code: 400</p>
+                                    <p>URL: https://fakerestapi.azurewebsites.net/api/v1/Authors/1</p>
+                                    <p>Status code: 405</p>
                                     <p>Content Type: application/json</p>
                                     <h4>Request Headers</h4>
                                     <pre>Accept=*/*<br>Content-Type=application/json</pre>
                                     <h4>Content Body</h4>
                                     <pre>{<br>    &quot;id&quot;: 1,<br>    &quot;idBook&quot;: 2,<br>    &quot;firstName&quot;: 1,<br>    &quot;lastName&quot;: 2<br>}</pre>
                                     <h4>Response Headers</h4>
-                                    <pre>Content-Type: application/problem+json; charset=utf-8<br>Date: Thu, 23 Feb 2023 21:41:47 GMT<br>Server: Kestrel<br>Transfer-Encoding: chunked</pre>
+                                    <pre>Content-Length: 0<br>Date: Fri, 24 Feb 2023 17:51:21 GMT<br>Server: Kestrel<br>Allow: DELETE, GET, PUT</pre>
                                 <h4>Response Body</h4>
-                                    <pre>{<br>    &quot;type&quot;: &quot;https://tools.ietf.org/html/rfc7231#section-6.5.1&quot;,<br>    &quot;title&quot;: &quot;One or more validation errors occurred.&quot;,<br>    &quot;status&quot;: 400,<br>    &quot;traceId&quot;: &quot;00-73e7abce77290e4cb3ebf9d5524346fb-15faa0ecda9b5548-00&quot;,<br>    &quot;errors&quot;: {<br>        &quot;$.firstName&quot;: [<br>            &quot;The JSON value could not be converted to System.String. Path: $.firstName | LineNumber: 0 | BytePositionInLine: 32.&quot;<br>        ]<br>    }<br>}</pre>
+                                    <pre></pre>
                                     <h4>Response Cookies</h4>
                                     <pre></pre>
                             </div>
@@ -466,7 +466,7 @@
                     </td>
 
                     <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">030ms</span></td>
+                    <td width="100"><span class="top-level-step">033ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -483,7 +483,7 @@
                     <td class="step-description-column">
                         <div class="step-description">
                                 <span class="nested-group-step">
-                                                El c&oacute;digo de respuesta debe ser400
+                                                Then
                                         </span>
                             <span class="evidence">
                                 </span>
@@ -491,7 +491,7 @@
                     </td>
 
                     <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">011ms</span></td>
+                    <td width="100"><span class="nested-group-step">013ms</span></td>
                 </tr>
 
                             </table>
@@ -500,7 +500,7 @@
             <tr class="test-SUCCESS">
                     <td colspan="2"></td>
                 <td width="130"><span class="top-level-step"><em>SUCCESS</em></span></td>
-                <td width="100"><span class="top-level-step"><em>1.14s</em></span></td>
+                <td width="100"><span class="top-level-step"><em>1.1s</em></span></td>
             </tr>
 
         </table>

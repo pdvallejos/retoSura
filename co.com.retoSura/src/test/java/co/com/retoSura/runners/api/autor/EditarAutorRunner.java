@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         snippets = CucumberOptions.SnippetType.CAMELCASE,
         features = {"src/test/resources/features/api/autor/editarAutor.feature"},
-        glue = {"co.com.retoSura.definitions.api.autor"}
+        glue = {"co.com.retoSura.definitions"}
 )
 public class EditarAutorRunner {
 }
