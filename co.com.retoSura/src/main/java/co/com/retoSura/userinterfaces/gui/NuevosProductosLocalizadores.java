@@ -15,8 +15,8 @@ public class NuevosProductosLocalizadores {
             .the("Chaqueta hombre")
             .located(cssSelector("#maincontent > div.columns > div.sidebar.sidebar-main > div > div > ul:nth-child(4) > li:nth-child(2) > a"));
 
-    public static final Target PRODUCTO_CHAQUETA_HOMBRE = Target
-            .the("Producto chaqueta hombre")
+    public static final Target PRODUCTO_A_SELECCIONAR = Target
+            .the("Producto para seleccionar")
             .located(cssSelector("#maincontent > div.columns > div.column.main > div.products.wrapper.grid.products-grid > ol > li:nth-child(1) > div > a > span > span > img"));
 
     public static final Target TALLA_M = Target
@@ -29,9 +29,17 @@ public class NuevosProductosLocalizadores {
 
     public static final Target CANTIDAD = Target
             .the("Cantidad de productos")
-            .located(id("product-addtocart-button"));
+            .located(id("qty"));
 
     public static final Target BTN_ANADIR_CARRO = Target
             .the("Boton Añadir al carro")
             .located(id("product-addtocart-button"));
+
+    public static final Target CHAQUETA_MUJER = Target
+            .the("Chaqueta de mujer")
+            .located(cssSelector("#maincontent > div.columns > div.sidebar.sidebar-main > div > div > ul:nth-child(2) > li:nth-child(2) > a"));
+
+    public static final Target CAMISAS_MUJER = Target
+            .the("Camisas de mujer")
+            .located(cssSelector("#maincontent > div.columns > div.sidebar.sidebar-main > div > div > ul:nth-child(2) > li:nth-child(3) > a"));
 }

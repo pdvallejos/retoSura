@@ -27,13 +27,9 @@ public class CreacionSinginDefinition extends Setup {
     @Dado("que el usuario quiere crear un nuevo usuario en la pagina")
     public void CrearNuevoUsuarioPagina() {
         setupGeneral();
-
         actor.can(BrowseTheWeb.with(webdriver));
-        actor.attemptsTo(Open.url(URL_BASE_GUI.getValor()));
-//        theActorInTheSpotlight().wasAbleTo(new AbrirPagina()
-//        );
-
-
+        actor.attemptsTo(Open.url(URL_BASE_GUI.getValor())
+        );
     }
 
     @Cuando("el usuario ingrese los datos y cree el nuevo usuario")
@@ -53,9 +49,8 @@ public class CreacionSinginDefinition extends Setup {
                 singIn().conCorreo(listaCliente.get(2))
                         .conContrasena(listaCliente.get(3))
         );
-        unMomento(20);
         actor.should(seeThat(
-                validarTextos(obtenerTextoElemento(TITULO_INGRESO, actor),TXT_INICIO_DE_SECCION.getValor())
+                validarTextos(obtenerTextoElemento(TITULO_INGRESO, actor),TXT_INICIO_DE_SECCION.getValor()+listaCliente.get(0)+" "+listaCliente.get(1)+"!")
         ));
     }
 

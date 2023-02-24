@@ -10,8 +10,6 @@ import static co.com.retoSura.userinterfaces.gui.CreacionYSinginLocalizadores.CO
 import static co.com.retoSura.userinterfaces.gui.CreacionYSinginLocalizadores.CONTRASENA_CREACION;
 import static co.com.retoSura.userinterfaces.gui.CreacionYSinginLocalizadores.CORREO_ELECTRONICO_CREACION;
 import static co.com.retoSura.userinterfaces.gui.CreacionYSinginLocalizadores.CREAR_NUEVO_CLIENTE;
-import static co.com.retoSura.userinterfaces.gui.CreacionYSinginLocalizadores.OPCION_SALIR;
-import static co.com.retoSura.userinterfaces.gui.CreacionYSinginLocalizadores.PESTANA_SALIR;
 import static co.com.retoSura.userinterfaces.gui.CreacionYSinginLocalizadores.PRIMER_NOMBRE;
 import static co.com.retoSura.userinterfaces.gui.CreacionYSinginLocalizadores.SEGUNDO_NOMBRE;
 
@@ -56,9 +54,7 @@ public class CrearCliente implements Task {
                 Enter.theValue(correo).into(CORREO_ELECTRONICO_CREACION),
                 Enter.theValue(contrasena).into(CONTRASENA_CREACION),
                 Enter.theValue(segundaContrasena).into(CONFIRMACION_CONTRASENA),
-                Click.on(BTN_CREAR_NUEVO_CLIENTE),
-                Click.on(PESTANA_SALIR),
-                Click.on(OPCION_SALIR)
+                Click.on(BTN_CREAR_NUEVO_CLIENTE)
         );
     }
 
