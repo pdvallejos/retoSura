@@ -10,9 +10,6 @@ import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Open;
-
-import java.util.EmptyStackException;
-
 import static co.com.retoSura.enums.Diccionario.URL_BASE_GUI;
 
 public class FiltrosDefinition extends Setup {

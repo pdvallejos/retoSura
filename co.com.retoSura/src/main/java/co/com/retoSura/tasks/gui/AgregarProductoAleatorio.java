@@ -4,38 +4,40 @@ import co.com.retoSura.interaccions.Esperar;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.actions.MoveMouseToTarget;
 import net.serenitybdd.screenplay.actions.MoveMouseToWebElement;
+import net.serenitybdd.screenplay.waits.WaitUntil;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+
 import java.util.List;
+import java.util.Random;
 
 import static co.com.retoSura.userinterfaces.gui.AgregarProductosFiltradosUserInterfaces.LNK_AGREGAR;
 import static co.com.retoSura.userinterfaces.gui.AgregarProductosFiltradosUserInterfaces.LNK_PRODUCTO;
+import static co.com.retoSura.userinterfaces.gui.MenuRelojesUserInterface.LNK_GEAR;
+import static co.com.retoSura.userinterfaces.gui.MenuRelojesUserInterface.LNK_RELOJES;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
+import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
-public class AgregarProductoFiltrado implements Task {
-    private WebDriver driver;
+public class AgregarProductoAleatorio implements Task {
+    private final WebDriver driver;
 
-    public AgregarProductoFiltrado(WebDriver driver) {
-        this.driver = driver;
+    public AgregarProductoAleatorio(WebDriver driver) {this.driver = driver;}
+
+    public static AgregarProductoAleatorio alCarrito(WebDriver driver) {
+        return instrumented(AgregarProductoAleatorio.class, driver);
     }
-
-    public static AgregarProductoFiltrado todos(WebDriver driver) {
-        return instrumented(AgregarProductoFiltrado.class, driver);
-    }
-
     @Override
     public <T extends Actor> void performAs(T actor) {
         List<WebElement> elementosLi = driver.findElements(By.xpath(LNK_PRODUCTO));
-        List<WebElement> elementosLiExcluido = elementosLi.subList(0, elementosLi.size());
-        int indice = 1;
 
-        for (WebElement elemento : elementosLiExcluido) {
+        Random random = new Random();
+        int indice = random.nextInt(elementosLi.size());
 
-            agregarProducto(actor, elemento, indice);
-            indice++;
-        }
+        WebElement elementoAleatorio = elementosLi.get(indice);
+        agregarProducto(actor, elementoAleatorio, indice);
     }
 
     private <T extends Actor> void agregarProducto(T actor, WebElement elemento, int indice) {
@@ -43,8 +45,8 @@ public class AgregarProductoFiltrado implements Task {
         actor.attemptsTo(
                 Esperar.unMomento(5),
                 new MoveMouseToWebElement(elemento),
-                Esperar.unMomento(5),
-                Click.on(String.format(LNK_AGREGAR, indice))
-                );
+                Esperar.unMomento(6),
+                Click.on(String.format(LNK_AGREGAR, indice+1))
+        );
     }
 }
