@@ -1,10 +1,16 @@
 package co.com.retoSura.enums;
 
-public class Diccionario {
+import lombok.AllArgsConstructor;
+import lombok.Getter;
 
-    private Diccionario() {}
+@Getter
+@AllArgsConstructor
+public enum Diccionario {
 
-    public static final String URL_BASE_GUI = "https://magento.softwaretestingboard.com/";
+    URL_BASE_GUI  ("https://magento.softwaretestingboard.com/"),
+    ACTOR_NAME ("Fabricio"),
+    RUTA_DRIVERS ("src/test/resources/drivers");
 
-    public static final String ACTOR_NAME = "Fabricio";
+    private final String valor;
+
 }
